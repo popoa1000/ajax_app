@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   # [HTTPメソッド] '[URIパターン]', to: '[コントローラー名]#[アクション名]'
   root to: 'posts#index'
   post 'posts', to: 'posts#create'
-  #iminashi
+  get 'posts/:id', to: 'posts#checked'
 end
